@@ -1,0 +1,18 @@
+server:
+  port: 8089
+
+#spring.application.name=dubbo-spring-boot-starter
+#spring.dubbo.server=true
+#spring.dubbo.registry=zookeeper://127.0.0.1:2181
+
+#dubbo服务提供者配置
+dubbo:
+  application:
+    id: provider
+    name: provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    #注册中心的协议类型
+    protocol: zookeeper
+  scan:
+    base-package: com.frank.dubbo.practice.service.impl
