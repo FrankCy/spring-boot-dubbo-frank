@@ -1,8 +1,8 @@
-package com.frank.dubbo.consumer.practice.controller;
+package com.frank.dubbo.practice.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.frank.dubbo.consumer.practice.service.ConsumerService;
-import com.frank.dubbo.consumer.practice.service.UserService;
+import com.frank.dubbo.practice.service.ConsumerService;
+import com.frank.dubbo.practice.service.UserService;
 import com.frank.dubbo.entity.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +13,7 @@ public class HelloController {
 
     @Autowired
     private ConsumerService consumerService;
+
     @Reference(version = "userService")
     private UserService userService;
 

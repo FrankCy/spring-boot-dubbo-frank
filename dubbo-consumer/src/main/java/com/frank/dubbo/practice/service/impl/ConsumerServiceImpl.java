@@ -1,9 +1,9 @@
-package com.frank.dubbo.consumer.practice.service.impl;
+package com.frank.dubbo.practice.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
-import com.frank.dubbo.consumer.practice.service.ConsumerService;
-import com.frank.dubbo.consumer.practice.service.UserService;
+import com.frank.dubbo.practice.service.ConsumerService;
+import com.frank.dubbo.practice.service.UserService;
 import com.frank.dubbo.entity.po.User;
 
 @Service

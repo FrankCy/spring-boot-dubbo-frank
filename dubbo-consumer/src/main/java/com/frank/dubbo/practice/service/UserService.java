@@ -1,4 +1,4 @@
-package com.frank.dubbo.provider.practice.service;
+package com.frank.dubbo.practice.service;
 
 import com.frank.dubbo.entity.po.User;
 

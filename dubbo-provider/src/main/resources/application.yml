@@ -15,4 +15,4 @@ dubbo:
     #注册中心的协议类型
     protocol: zookeeper
   scan:
-    base-package: com.frank.dubbo.practice.service
+    base-package: com.frank.dubbo.practice.service.impl

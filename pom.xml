@@ -12,6 +12,7 @@
         <module>dubbo-provider</module>
         <module>dubbo-consumer</module>
         <module>dubbo-entity</module>
+        <module>dubbo-service</module>
     </modules>
 
     <parent>
