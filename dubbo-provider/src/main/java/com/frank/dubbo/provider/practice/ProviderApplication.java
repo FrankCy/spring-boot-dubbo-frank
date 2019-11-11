@@ -1,4 +1,4 @@
-package com.frank.dubbo.practice;
+package com.frank.dubbo.provider.practice;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;

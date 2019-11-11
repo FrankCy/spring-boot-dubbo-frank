@@ -1,4 +1,4 @@
-package com.frank.dubbo.practice.util;
+package com.frank.dubbo.provider.practice.util;
 
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 

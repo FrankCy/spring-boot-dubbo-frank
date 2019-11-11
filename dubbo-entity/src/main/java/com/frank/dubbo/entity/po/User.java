@@ -1,4 +1,4 @@
-package com.frank.dubbo.practice.entity;
+package com.frank.dubbo.entity.po;
 
 public class User {
 
