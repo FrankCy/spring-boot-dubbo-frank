@@ -1,20 +1,33 @@
+#server:
+#  port: 8087
+#spring:
+#  application:
+#    name: dubbo-consumer
+#
+## Dubbo配置
+#dubbo:
+#  application:
+#    name: consumer
+#  #注册中心地址
+#  registry:
+#    address: zookeeper://127.0.0.1:2181
+#  protocol:
+#    name: registry
+#  #调用dubbo组建扫描的项目路径
+#  scan: com.frank.dubbo.practice.service.impl
+#  #检查服务是否可用默认为true，不可用时抛出异常，阻止spring初始化，为方便部署，可以改成false
+#  consumer:
+#    check: false
+#
+## 避免和 server 工程端口冲突
 server:
-  port: 8087
-spring:
-  application:
-    name: dubbo-consumer
-
-# Dubbo配置
+  port: 8084
+## Dubbo 服务消费者配置
 dubbo:
   application:
     name: consumer
-  #注册中心地址
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://127.0.0.1:2181      #zookeeper的地址
   protocol:
-    name: registry
-  #调用dubbo组建扫描的项目路径
-  scan: com.frank.dubbo.practice.service.impl
-  #检查服务是否可用默认为true，不可用时抛出异常，阻止spring初始化，为方便部署，可以改成false
-  consumer:
-    check: false
+    port: 20881
+  scan: com.frank.dubbo.practice.service            #我们的消费者调用接口下的路径 包名+层名

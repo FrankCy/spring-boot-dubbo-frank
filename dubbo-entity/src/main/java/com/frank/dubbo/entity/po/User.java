@@ -1,6 +1,8 @@
 package com.frank.dubbo.entity.po;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     private String nickName;
 
@@ -20,5 +22,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "nickName='" + nickName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
