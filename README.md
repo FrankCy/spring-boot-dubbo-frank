@@ -16,7 +16,7 @@
   + 3.启动dubbo-consumer 订阅服务
 - 访问流程
   + 打开页面访问地址： [http://localhost:8084/hello](http://localhost:8084/hello)
-  + 查看消费者控制台，技能看到下面信息：
+  + 查看消费者控制台，就能看到下面信息：
   ```
     User{nickName='service层的调用者', email='email@qq.com'}
     User{nickName='I am a consumer from controller', email='email@qq.com'}
@@ -24,6 +24,8 @@
 
 
 ## ZooKeeper ##
-[CSDN —— ZooKeeper —— 认识ZooKeeper](#)
+[【CSDN 】ZooKeeper —— 认识ZooKeeper（编写中）](#)
 
-## 
+## Dubbo ##
+[【CSDN 】Dubbo —— 认识Dubbo（编写中）](#)
+
